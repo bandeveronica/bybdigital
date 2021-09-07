@@ -1,0 +1,17 @@
+/* Estilos de los títulos y subtitulos */
+h1, h2, h3, h4, h5 {
+    color: rgb(243, 66, 175);
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+/* Estilo de todos los botones */
+.boton {
+    margin-top: 10px;
+    border: 1px solid rgb(14, 123, 190); 
+    padding: 7px;
+    background-color: rgb(14, 123, 190);
+    color: #ffffff; 
+    text-decoration: none;
+    border-radius: 50px;
+}
