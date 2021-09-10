@@ -9,14 +9,18 @@
         <title>Página Inicio - ByB Digital</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link rel="stylesheet" href="../APRENDIENDOSASS/css/index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script src="https://kit.fontawesome.com/06feec778e.js" crossorigin="anonymous"></script>
     </head>
+
 <body>
+    <!-- Encabezado con logo y barra de navegación -->
     <header class="d-flex justify-content-center">
         <nav class="navbar navbar-expand-lg navbar-light style= "background-color: #FFFFFF">
           <div class="container-fluid">
@@ -48,202 +52,227 @@
     </header>  
     
 <!-- Presentacion de la empresa -->
-<h1>Nosotros</h1>
-<div class="divNosotros">
-    <section>
-        <img class="imgNosotros" src="img/nosotros.jpg" alt="pareja de empresarios chocando manos"> 
-        <img class="imgGrupal" src="img/fotogrupalcomp.jpg" alt="equipo de trabajo reunidos">  
+    <h1>Nosotros</h1>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/nosotros.jpg" class="d-block w-100" alt="pareja de empresarios chocando manos">
+        </div>
+        <div class="carousel-item">
+            <img src="img/fotogrupalcomp.jpg" class="d-block w-100" alt="equipo de trabajo reunidos">
+        </div>
+        </div>
+    </div>
+
+    <section id="beneficio">
+        <div class="tituloTexto">
+            <h2>¿Por qué elegir nuestros cursos?</h2>
+        </div>
+        <div class="beneficiosCaja">
+            <div class="beneficios">
+                <h3>Acceso ilimitado</h3>
+                <div class="beneficiosDesc">
+                    <div class="beneficioIcono">
+                        <i class="fa fa-folder-open" aria-hidden="true"></i>
+                    </div>
+                    <div class="beneficioTexto">
+                        <p> Podrás acceder con tu usuario y contraseña las veces que quieras a todos los cursos a los que te hayas inscripto, acceso perpetuo y con actualizaciones todos los meses. </p>
+                    </div>
+                </div>
+                <h3>Certificación</h3>
+                <div class="beneficiosDesc">
+                    <div class="beneficioIcono">
+                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                    </div>
+                    <div class="beneficioTexto">
+                        <p> Al finalizar cada curso, deberás presentar tu proyecto final y al aprobar, se te enviará tu certificado internacional. </p>
+                    </div>
+                </div>
+                <h3>Bolsa de Trabajo</h3>
+                <div class="beneficiosDesc">
+                    <div class="beneficioIcono">
+                        <i class="fa fa-suitcase" aria-hidden="true"></i>
+                    </div>
+                    <div class="beneficioTexto">
+                        <p> Al aprobar tu curso podrás acceder a la bolsa de trabajo y adjuntar tu currículum vitae para aplicar a las postulaciones. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="beneficiosImg">
+                <img src="../APRENDIENDOSASS/img/videocall.jpg" alt="curso por videollamada">
+            </div>
+        </div>
     </section>
-    <section>
-    <p class="paragNosotros">
-       <b>Contamos con un equipo de profesionales de distintas áreas para ayudar a emprendedores, empresarios y freelancers a desarrollar y mejorar habilidades para desempeñarse exitosamente en el mundo digital actual.</b>
-    </p>
-</section>
-</div>
-<nav class="navBoton">
-    <a class="botonConocenos" href="pages/equipo.html">Conocenos más</a>  
-</nav>
 
 
 <!-- Subtitulo y Testimonios de clientes con imagen y texto -->
-<h2 class="indexSubti animate__animated animate__pulse animate__repeat-3"> Testimonios </h2>
+    <h2 class="indexSubti animate__animated animate__pulse animate__repeat-3"> Testimonios </h2>
 
-<section class="testimonios animate__animated animate__fadeInLeft animate__repeat-1">
-     <!--testimonios-box-contenedor------>
-     <div class="testimonios__contenedor">
-        <!--BOX-1-------------->
-        <div class="testimonios__caja">
-            <div class="caja-top">
-                <!--perfil----->
-                <div class="perfil">
-                    <div class="perfil-img">
-                        <img src="img/Testimonio1.jpg" />
+    <section class="testimonios animate__animated animate__fadeInLeft animate__repeat-1">
+        <!--testimonios-box-contenedor------>
+        <div class="testimonios__contenedor">
+            <!--BOX-1-------------->
+            <div class="testimonios__caja">
+                <div class="caja-top">
+                    <!--perfil----->
+                    <div class="perfil">
+                        <div class="perfil-img">
+                            <img src="img/Testimonio1.jpg" />
+                        </div>
+                        <!--nombre y usuario-->
+                        <div class="name-user">
+                            <strong>Alicia Suarez</strong>
+                            <span>@AlisuarezCM</span>
+                        </div>
                     </div>
-                    <!--nombre y usuario-->
-                    <div class="name-user">
-                        <strong>Alicia Suarez</strong>
-                        <span>@AlisuarezCM</span>
+                    <!--reseña------>
+                    <div class="reseñas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Estrella Vacia-->
                     </div>
                 </div>
-                <!--reseña------>
-                <div class="reseñas">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i><!--Estrella Vacia-->
+                <!-- Texto de Testimonio -->
+                <div class="clientes__comentarios">
+                    <article class="textoTesti">"Gracias al Curso de Community Manager, pasé de cero a conseguir mis primeros clientes. Hoy ya pienso en formar mi propia empresa."</article>
                 </div>
             </div>
-            <!-- Texto de Testimonio -->
-            <div class="clientes__comentarios">
-                <article class="textoTesti">"Gracias al Curso de Community Manager, pasé de cero a conseguir mis primeros clientes. Hoy ya pienso en formar mi propia empresa."</article>
+
+            <!--BOX-2-------------->
+            <div class="testimonios__caja">
+                <div class="caja-top">
+                    <!--perfil----->
+                    <div class="perfil">
+                        <div class="perfil-img">
+                            <img src="img/Testimonio2.jpg" />
+                        </div>
+                        <!--nombre y usuario-->
+                        <div class="name-user">
+                            <strong>Karen Lopez</strong>
+                            <span>@KaLo</span>
+                        </div>
+                    </div>
+                    <!--reseña------>
+                    <div class="reseñas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><!--Estrella vacia-->
+                    </div>
+                </div>
+                <!-- Texto de Testimonio -->
+                <div class="clientes__comentarios">
+                    <article class="textoTesti">"Cursos super actualizados y con información en cantidad y por sobre todo de calidad. Aprendí más que en cualquier otro lado!"</article>
+                </div>
+            </div>
+
+            <!--BOX-3-------------->
+            <div class="testimonios__caja">
+                <div class="caja-top">
+                    <!--perfil----->
+                    <div class="perfil">
+                        <div class="perfil-img">
+                            <img src="img/Testimonio3.jpg" />
+                        </div>
+                        <!--nombre y usuario-->
+                        <div class="name-user">
+                            <strong>Nicolás Blanco</strong>
+                            <span>@NicoBlanco</span>
+                        </div>
+                    </div>
+                    <!--reseña------>
+                    <div class="reseñas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Estrella vacia-->
+                    </div>
+                </div>
+                <!-- Texto de Testimonio -->
+                <div class="clientes__comentarios">
+                    <article class="textoTesti">"Gracias a los cursos pude sacar adelante mi empresa, convirtiéndola 100% online. Optimicé mi tiempo e incluso tengo más ventas."</article>
+                </div>
+            </div>
+            <!--BOX-4-------------->
+            <div class="testimonios__caja">
+                <div class="caja-top">
+                    <!--perfil----->
+                    <div class="perfil">
+                        <div class="perfil-img">
+                            <img src="img/testimonio4.jpg"/>
+                        </div>
+                        <!--nombre y usuario-->
+                        <div class="name-user">
+                            <strong>Leonel Kramer</strong>
+                            <span>@KramerInd</span>
+                        </div>
+                    </div>
+                    <!--reseña------>
+                    <div class="reseñas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Estrella vacia-->
+                    </div>
+                </div>
+                <!-- Texto de Testimonio -->
+                <div class="clientes__comentarios">
+                    <article class="textoTesti">"Recomiendo 100% el curso de CM. Con las partes prácticas aprendí mucho para aplicar ya mismo en mis proyectos."</article>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!--BOX-2-------------->
-        <div class="testimonios__caja">
-            <div class="caja-top">
-                <!--perfil----->
-                <div class="perfil">
-                    <div class="perfil-img">
-                        <img src="img/Testimonio2.jpg" />
-                    </div>
-                    <!--nombre y usuario-->
-                    <div class="name-user">
-                        <strong>Karen Lopez</strong>
-                        <span>@KaLo</span>
-                    </div>
-                </div>
-                <!--reseña------>
-                <div class="reseñas">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i><!--Estrella vacia-->
-                </div>
+           
+    <!-- Pie de página -->
+    <footer>
+        <div class="row">
+            <div class="col">
+                <p class="footerCopy">Copyright ByB Digital - 2021.</p>
             </div>
-            <!-- Texto de Testimonio -->
-            <div class="clientes__comentarios">
-                <article class="textoTesti">"Cursos super actualizados y con información en cantidad y por sobre todo de calidad. Aprendí más que en cualquier otro lado!"</article>
+            <div class="col">
+                <p class="footerTit"><b>Oficina</b> <div class="subrayado"><span></span></div></p>
+                <p class="footerText"> Av. Corrientes 2235</p>
+                <p class="footerText">"Torre Santier" - Piso 4</p>
+                <p class="footerText">CABA, Argentina.</p>
+                <p class="footerTit"><b>E-mail</b></p>
+                <p class="footerText"> contacto@bybdigital.com</p>
             </div>
-        </div>
-
-        <!--BOX-3-------------->
-        <div class="testimonios__caja">
-            <div class="caja-top">
-                <!--perfil----->
-                <div class="perfil">
-                    <div class="perfil-img">
-                        <img src="img/Testimonio3.jpg" />
-                    </div>
-                    <!--nombre y usuario-->
-                    <div class="name-user">
-                        <strong>Nicolás Blanco</strong>
-                        <span>@NicoBlanco</span>
-                    </div>
-                </div>
-                <!--reseña------>
-                <div class="reseñas">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i><!--Estrella vacia-->
-                </div>
-            </div>
-            <!-- Texto de Testimonio -->
-            <div class="clientes__comentarios">
-                <article class="textoTesti">"Gracias a los cursos pude sacar adelante mi empresa, convirtiéndola 100% online. Optimicé mi tiempo e incluso tengo más ventas."</article>
-            </div>
-        </div>
-        <!--BOX-4-------------->
-        <div class="testimonios__caja">
-            <div class="caja-top">
-                <!--perfil----->
-                <div class="perfil">
-                    <div class="perfil-img">
-                        <img src="img/testimonio4.jpg"/>
-                    </div>
-                    <!--nombre y usuario-->
-                    <div class="name-user">
-                        <strong>Leonel Kramer</strong>
-                        <span>@KramerInd</span>
-                    </div>
-                </div>
-                <!--reseña------>
-                <div class="reseñas">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i><!--Estrella vacia-->
-                </div>
-            </div>
-            <!-- Texto de Testimonio -->
-            <div class="clientes__comentarios">
-                <article class="textoTesti">"Recomiendo 100% el curso de CM. Con las partes prácticas aprendí mucho para aplicar ya mismo en mis proyectos."</article>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Curso en Promoción. Publicidad -->
-<div>
-    <h2 class="indexSubti"><caption> Curso de Community Manager: 10% OFF!</caption></h2>
-    <table border="">
-        <tr>
-            <th>Modalidad y qué obtendras</th>
-            <th>Requisitos para el descuento</th>
-            <th>¿Cómo inscribirte?</th>
-        </tr>
-        <tr>
-            <td rowspan= "8" </td>
+            <div class="col">
+                <p class="footerTit"> <b>Páginas</b><div class="subrayado"><span></span></div></p>
                 <ul>
-                    <li>Clases en vivo</li>
-                    <li>Video-tutoriales</li>
-                    <li>Archivos de lectura</li>
-                    <li>Ejercicios prácticos</li>
-                    <li>Ayuda de profesores</li>
-                    <li>Acceso ilimitado</li>
-                    <li>Certificación</li>
+                    <li>
+                        <a href="../APRENDIENDOSASS/pages/cursos.html">Cursos</a>
+                    </li>
+                    <li>
+                        <a href="../APRENDIENDOSASS/pages/asesorias.html">Asesorias</a>
+                    </li>
+                    <li>
+                        <a href="../APRENDIENDOSASS/pages/noticias.html">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="../APRENDIENDOSASS/pages/contacto.html">Contacto</a>
+                    </li>
                 </ul>
-        </tr>
-        <tr>
-            <td rowspan= "5" </td>
-                <ul>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
-                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                        <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z"/>
-                      </svg>Tener ciudadanía argentina</li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
-                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                        <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z"/>
-                      </svg>Seguirnos en nuestras redes sociales</li>
-                </ul>
-        </tr>
-        <tr>
-            <td rowspan="6"</td>
-                <ol>
-                    <li>Ingresar a la Web</li>
-                    <li>Ir a Cursos</li>
-                    <li>Click en más información</li>
-                    <li>Click en Inscribirme</li>
-                    <li>Completar tus datos</li>
-                    <li>Revisar tu correo electrónico</li>
-                    <li>Entrar al link enviado</li>
-                </ol>
-        </tr>
-    </table>
-</div>
-            
-            <!-- Pie de página para dirigir a nuestras redes sociales -->
-            <footer>
-                ¡Encontranos en nuestras redes sociales para no perderte nada!
-                <a href="https://instagram.com/bybpostres"> <img src="img/instagramicon.svg" alt="icono de instagram"></a>
-            </footer>
-    
+            </div>
+
+            <div class="col">
+                <p class="footerTit"> <b>Redes Sociales</b><div class="subrayado"><span></span></div></p>
+                <div class="redesSociales">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
 </body>

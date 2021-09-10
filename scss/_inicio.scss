@@ -43,29 +43,67 @@
 
 /* Estilos del Nosotros */
 
-
-.imgNosotros, .imgGrupal {
-    margin-left: 2rem;
-    width:550px;
-    height:300px;
+#beneficio {
+  margin-top: 2rem;
 }
 
-div section img {
-    margin: 50px;
-    margin-bottom: 5px;
-    margin-top: 7px;
-    }
-
-
-div section p {
-    text-align: center;
-    color: rgb(14, 123, 190);
-    font-size: 20px;
-    border: 2px dashed rgb(243, 66, 175);
-    padding: 10px;
-    margin-left: 150px;
-    margin-right: 150px;
+.tituloTexto {
+  font-size: 50px;
 }
+
+.beneficiosCaja {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.beneficios {
+  flex-basis: 50%;
+}
+
+.beneficiosImg {
+  flex-basis: 50%;
+  margin: auto;
+}
+
+.beneficiosImg img {
+  width: 70%;
+  opacity: 0.9;
+  border-radius: 20px;
+}
+
+.beneficios h3 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 100 !important;
+  color: #f342af;
+}
+
+.beneficiosDesc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.beneficioIcono .fa {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 8px;
+  color: #f342af;
+  border: 1px solid rgb(243, 66, 175);
+}
+
+.beneficioTexto p {
+  padding: 0 20px;
+  text-align: initial;
+}
+
+
 
 /* Estilos de Testimonios */
 .indexSubti {
@@ -74,7 +112,7 @@ div section p {
     margin-top: 50px;
     margin-bottom: 1rem;
     font-size: 26px;
-    background-color: rgb(255, 250, 200);
+    background-color: rgba(253, 251, 223, 0.938);
 }
 
 .animate__animated.animate__pulse {
@@ -180,13 +218,24 @@ div article {
 }
 
 
-/* Estilos de la tabla del Curso en promo */
-table {
-    background-color: rgb(255, 250, 200);
-    margin-left: 200px;
-    margin-bottom: 100px;
-    
-    ul {
-      list-style-type: none;
-    }
+
+
+@media screen and (max-width: 780px) {
+  
+  .tituloTexto {
+    font-size: 35px;
+  }
+
+  .beneficios {
+    flex-basis: 100%;
+  }
+
+  .beneficiosImg {
+    flex-basis: 100%;
+  }
+
+  .beneficiosImg img {
+    width: 100%;
+  }
+
 }

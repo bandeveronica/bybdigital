@@ -1,17 +1,112 @@
 /* Estilo del footer de todas las paginas del sitio*/
+
 footer {
-    color: rgb(14, 123, 190);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    top: 2rem;
+    background: linear-gradient(to right, #f342af, #0e7bbe);
+    padding: 30px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 18px;
+    opacity: 0.7;
+}
+
+.footerCopy {
+    position: absolute;
+    bottom: 8px;
+}
+
+.footerText {
+    padding-left: 20px;
+}
+
+footer p {
+    color: white;
+}
+
+.row {
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    margin-top: 2rem;
-    background-color: rgb(255, 250, 200);
+    align-items: flex-start;
+    justify-content: space-between;
+}
 
-    img {
-        width: 25px;
-        height: 25px;
-        margin-left: 1rem;
-        margin-right: 0.5rem;
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.footerTit{
+    width: fit-content;
+    position: relative;
+    font-size: 20px;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 12px;
+a {
+    text-decoration: none;
+    color: white;
+}
+}
+
+.redesSociales .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #f342af;
+    background: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.subrayado {
+    width: 30%;
+    height: 5px;
+    background: rgb(184, 179, 179);
+    border-radius: 3px;
+    position: relative;
+    top: 1px;
+    left: 0;
+    overflow: hidden;
+}
+
+.subrayado span {
+    width: 15px;
+    height: 100%;
+    background: #ffff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: 100px;
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        bottom: unset;
+        border-top-left-radius: 50px;
+    }
+    .col {
+        flex-basis: 100%;
+    }
+    .footerCopy {
+        padding-top: 10px;
     }
 }

@@ -40,24 +40,55 @@ li a:hover {
   color: white !important; }
 
 /* Estilos del Nosotros */
-.imgNosotros, .imgGrupal {
-  margin-left: 2rem;
-  width: 550px;
-  height: 300px; }
+#beneficio {
+  margin-top: 2rem; }
 
-div section img {
-  margin: 50px;
-  margin-bottom: 5px;
-  margin-top: 7px; }
+.tituloTexto {
+  font-size: 50px; }
 
-div section p {
-  text-align: center;
-  color: #0e7bbe;
-  font-size: 20px;
-  border: 2px dashed #f342af;
-  padding: 10px;
-  margin-left: 150px;
-  margin-right: 150px; }
+.beneficiosCaja {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center; }
+
+.beneficios {
+  flex-basis: 50%; }
+
+.beneficiosImg {
+  flex-basis: 50%;
+  margin: auto; }
+
+.beneficiosImg img {
+  width: 70%;
+  opacity: 0.9;
+  border-radius: 20px; }
+
+.beneficios h3 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 100 !important;
+  color: #f342af; }
+
+.beneficiosDesc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px; }
+
+.beneficioIcono .fa {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 8px;
+  color: #f342af;
+  border: 1px solid #f342af; }
+
+.beneficioTexto p {
+  padding: 0 20px;
+  text-align: initial; }
 
 /* Estilos de Testimonios */
 .indexSubti {
@@ -66,7 +97,7 @@ div section p {
   margin-top: 50px;
   margin-bottom: 1rem;
   font-size: 26px;
-  background-color: #fffac8; }
+  background-color: rgba(253, 251, 223, 0.938); }
 
 .animate__animated.animate__pulse {
   --animate-duration: 10s; }
@@ -154,26 +185,35 @@ div article {
   margin-right: 30px;
   font-style: italic; }
 
-/* Estilos de la tabla del Curso en promo */
-table {
-  background-color: #fffac8;
-  margin-left: 200px;
-  margin-bottom: 100px; }
-  table ul {
-    list-style-type: none; }
+@media screen and (max-width: 780px) {
+  .tituloTexto {
+    font-size: 35px; }
+  .beneficios {
+    flex-basis: 100%; }
+  .beneficiosImg {
+    flex-basis: 100%; }
+  .beneficiosImg img {
+    width: 100%; } }
 
 /* Estilos de pagina CURSOS */
-.portadaCursos {
-  width: 100%;
-  height: 20%; }
+#banner {
+  background: url(../img/bannercurso.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 0.8; }
 
 .tituloCurso {
   background-color: #fffac8;
+  background-color: rgba(252, 241, 241, 0.925);
   color: #f342af;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px; }
+  margin: auto;
+  margin-top: 20px;
+  width: 75%;
+  border-radius: 10px; }
 
 .textoCurso {
   color: #0e7bbe;
@@ -201,14 +241,20 @@ form label {
   background-color: #fffac8;
   font-weight: 400; }
 
-/* Estilos Página Noticias APLICANDO OPERACIONES DE SASS*/
-.pNoticias {
-  margin-left: 2rem; }
+.card {
+  width: 70%;
+  justify-content: center;
+  opacity: 0.7;
+  margin: 0 auto; }
+  .card .card-header {
+    background-color: #f342af;
+    color: #fffac8; }
+  .card .card-title {
+    font-size: 30px; }
 
-.noticiasVid {
-  width: 853px;
-  height: 480px;
-  margin-left: 2rem; }
+section .quote {
+  margin-top: 70px;
+  margin-bottom: 50px; }
 
 /* Estilos Página Contacto */
 .formContacto {
@@ -262,28 +308,34 @@ form label {
   height: 300px;
   margin-left: 3rem; }
 
-/* RESPONSIVE DE PAGINA PPAL PARA TABLET CORRECTA */
+@media screen and (max-width: 780px) {
+  .card {
+    width: 100%; }
+    .card .card-title {
+      font-size: 20px; } }
+
 /* Estilos de los títulos y subtitulos */
 h1, h2, h3, h4, h5 {
   color: #f342af;
   margin-left: 2rem;
-  margin-top: 0.5rem; }
+  margin-top: 2rem;
+  background-color: rgba(252, 241, 241, 0.925); }
 
 /* Estilo de todos los botones */
 .boton {
-  margin-top: 10px;
+  margin-top: 3px;
   border: 1px solid #0e7bbe;
   padding: 7px;
   background-color: #0e7bbe;
   color: #ffffff;
   text-decoration: none;
-  border-radius: 50px; }
+  border-radius: 50px;
+  font-size: x-small; }
 
 /* Estilos generales aplicando Google Fonts */
 * {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: floralwhite; }
+  font-family: 'Poppins', sans-serif; }
 
 /* Estilo del titulo de la empresa */
 .tituloEmpresa {
@@ -329,15 +381,94 @@ li a:hover {
 
 /* Estilo del footer de todas las paginas del sitio*/
 footer {
-  color: #0e7bbe;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  top: 2rem;
+  background: linear-gradient(to right, #f342af, #0e7bbe);
+  padding: 30px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0.7; }
+
+.footerCopy {
+  position: absolute;
+  bottom: 8px; }
+
+.footerText {
+  padding-left: 20px; }
+
+footer p {
+  color: white; }
+
+.row {
+  width: 100%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  align-content: center;
-  margin-top: 2rem;
-  background-color: #fffac8; }
-  footer img {
-    width: 25px;
-    height: 25px;
-    margin-left: 1rem;
-    margin-right: 0.5rem; }
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 25%;
+  padding: 10px; }
+
+.footerTit {
+  width: fit-content;
+  position: relative;
+  font-size: 20px; }
+
+ul li {
+  list-style-type: none;
+  margin-bottom: 12px; }
+  ul li a {
+    text-decoration: none;
+    color: white; }
+
+.redesSociales .fab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #f342af;
+  background: white;
+  margin-right: 15px;
+  cursor: pointer; }
+
+.subrayado {
+  width: 30%;
+  height: 5px;
+  background: #b8b3b3;
+  border-radius: 3px;
+  position: relative;
+  top: 1px;
+  left: 0;
+  overflow: hidden; }
+
+.subrayado span {
+  width: 15px;
+  height: 100%;
+  background: #ffff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite; }
+
+@keyframes moving {
+  0% {
+    left: -20px; }
+  100% {
+    left: 100px; } }
+
+@media (max-width: 700px) {
+  footer {
+    bottom: unset;
+    border-top-left-radius: 50px; }
+  .col {
+    flex-basis: 100%; }
+  .footerCopy {
+    padding-top: 10px; } }
