@@ -30,26 +30,19 @@
 
 
 /* Estilos Página Asesorias */
-.descripcionAsesorias {
-    color: rgb(14, 123, 190);
-    font-size: 17px;
-    text-align:start;
-    margin-left: 2rem;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    background-color: rgb(255, 250, 200);
-    width: 50%;
-    border: rgb(243, 66, 175) dashed 2px;
-    padding: 10px;
-}
 
 .formAsesorias {
-    margin-left: 2rem;
+    width: 50%;
+    margin: auto;
+    background-color: rgba(252, 241, 241, 0.925);
+    padding: 1rem;
+    border-radius: 30px;
+    border-style: groove;
 }
 
 form label {
-    background-color: rgb(255, 250, 200);
-    font-weight: 400;
+    font-weight: 500;
+    border-radius: 5px;
 }
 
 
@@ -63,7 +56,7 @@ form label {
     .card-header {
     background-color: rgb(243, 66, 175) ;
     color: rgb(255, 250, 200);
-}
+    }
     .card-title {
         font-size: 30px;
     }
@@ -76,10 +69,30 @@ section .quote {
 
 
 /* Estilos Página Contacto */
-.formContacto {
-    margin-left: 2rem;
-    max-width: 70%;
+.contactoTit {
+    font-size: 26.8px;
 }
+
+.contactoSub {
+    font-size: 23px;
+}
+
+
+.formContacto {
+    width: 50%;
+    margin: auto;
+    background-color: rgba(252, 241, 241, 0.925);
+    padding: 1rem;
+    border-radius: 30px;
+    border-style: groove;
+    margin-top: 3rem;
+}
+
+form label {
+    font-weight: 500;
+    border-radius: 5px;
+}
+
 
 .separacionForm {
     margin-top: 15px;
@@ -87,62 +100,30 @@ section .quote {
 }
 
 
-/* Estilos GRILLA EQUIPO */
-
-.botonConocenos {
-    margin-top: 2rem;
-    margin-left: 38rem;
-    text-decoration: none;
-    border: 1px solid rgb(14, 123, 190); 
-    padding: 7px;
-    background-color: rgb(14, 123, 190);
-    color: #ffffff; 
-    border-radius: 50px;
-}
-
-.navBoton{
-    transition-duration: 2s;
-}
-.navBoton:hover{
-    transform: scale(1,-1);
-}
-
-#grilla {
-    margin-top: 2rem;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 300px 600px;
-    grid-template-rows: 400px 300px;
-}
-
-#fotoUno img {
-    width: 350px;
-    height: 500px;
-}
-
-#equipo {
-    padding: 2rem;
-    margin-top: 1.5rem;
-    font-size: 16px;
-}
-
-#nameFounder {
-    background-color: rgb(243, 66, 175);
-    color: #ffffff;
-    margin: auto;
-}
-
-
-#fotoEquipo img {
-width: 500px;
-height: 300px;
-margin-left: 3rem;
-}
-
-
+// Responsive de páginas
 @media screen and (max-width: 780px) {
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    .contactoTit {
+        margin: 5px;
+    }
+
+    .contactoSub {
+        margin: 5px;
+    }
+
+    .formContacto {
+        width: 100%;
+    }
+
+    .formAsesorias {
+     width: 90%;
+ }
     .card {
-width: 100%;
+    width: 100%;
 
         .card-title {
         font-size: 20px;

@@ -1,8 +1,8 @@
 /* Estilos de los títulos y subtitulos */
 h1, h2, h3, h4, h5 {
     color: rgb(243, 66, 175);
-    margin-left: 2rem;
     margin-top: 2rem;
+    padding-left: 20px;
     background-color: rgba(252, 241, 241, 0.925);
 }
 
@@ -15,5 +15,5 @@ h1, h2, h3, h4, h5 {
     color: #ffffff; 
     text-decoration: none;
     border-radius: 50px;
-    font-size: x-small;
+    font-size: small;
 }

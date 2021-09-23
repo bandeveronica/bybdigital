@@ -17,9 +17,8 @@
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <script src="https://kit.fontawesome.com/06feec778e.js" crossorigin="anonymous"></script>
-
 </head>
-    <!-- Encabezado con logo y menu de navegacion -->
+    
 <body>    
     <!-- Encabezado con logo y menu de navegacion -->
     <header class="d-flex justify-content-center">
@@ -52,57 +51,68 @@
         </nav>
     </header>  
 
-<!-- Formulario de contacto para Asesorias -->
-<h1>Asesorias</h1>
-<p class="descripcionAsesorias">Espacio creado para que nos cuentes todos los posibles inconvenientes que actualmente esté presentando tu negocio y así llegar junt@s a la solución. ¡Por favor completá estos datos para aplicar a la asesoría personalizada!</p>
+    <!-- Formulario de contacto para Asesorias -->
+    <h1>Asesorias</h1>
+    <section class="quote">
+        <div class="card quote">
+            <div class="card-header">
+            ¿Para qué sirven?
+            </div>
+            <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>Creamos este espacio para que nos cuentes todos los inconvenientes que actualmente esté presentando tu negocio y así llegar junt@s a la solución. ¡Por favor completá estos datos para aplicar a la asesoría personalizada!</p>
+            </blockquote>
+            </div>
+        </div>
+        </section>
 
-<form class="formAsesorias" action="" method="POST" enctype="application/x-www-form-urlencoded">
-    <div>
-        <label for="name">Nombre de tu empresa/emprendimiento:</label>
-        <input type="text" name="name" placeholder="Ej: ByB Digital">
-    </div>
-    <div>
-        <label for="text">¿Que aspecto/s crees que debería/n mejorar?</label>
+        <!-- Formulario de Asesorias -->
     <section>
-        <textarea name="comment" cols="70" rows="10" placeholder="Contanos..."></textarea>
+    <form class="formAsesorias" action="" method="POST" enctype="application/x-www-form-urlencoded">
+        <div>
+            <label for="name">Nombre de tu empresa/emprendimiento:</label>
+            <input type="text" name="name" placeholder="Ej: ByB Digital">
+        </div>
+        <div>
+            <label for="text">¿Que aspecto/s crees que debería/n mejorar?</label>
+        <section>
+            <textarea name="comment" cols="20" rows="5" placeholder="Contanos..."></textarea>
+        </section>
+        </div>
+        <div>
+            <label for="text">¿Cuanto tiempo lleva desde su funcionamiento?</label>
+            <select name="text">
+                <option value="less3m">Menos de 3 meses</option>
+                <option value="more3m">3 a 12 meses</option>
+                <option value="years">Más de un año</option>
+                <option value="lotofyears">Varios años</option>
+            </select>
+        </div>
+        <div>
+            <label for="text">¿A qué escala funciona?</label>
+            <select name="text">
+                <option value="city">En mi ciudad</option>
+                <option value="national">En mi país</option>
+                <option value="international">Internacional</option>
+            </select>
+        </div>
+        <div>
+            <label for="comment">Alguna información extra que quieras agregar. </label>
+                <section>
+                    <textarea name="comment" cols="20" rows="5" placeholder="Escribe aquí"></textarea>
+                </section>
+        </div>
+        <div>
+            <input class="boton" type="submit" value="Enviar">
+            <input class="boton" type="reset" value="Limpiar todo">
+        </div>
+    </form>
     </section>
-    </div>
-    <div>
-        <label for="text">¿Cuanto tiempo lleva desde su funcionamiento?</label>
-        <select name="text">
-            <option value="less3m">Menos de 3 meses</option>
-            <option value="more3m">3 a 12 meses</option>
-            <option value="years">Más de un año</option>
-            <option value="lotofyears">Varios años</option>
-        </select>
-    </div>
-    <div>
-        <label for="text">¿A qué escala funciona?</label>
-        <select name="text">
-            <option value="city">En mi ciudad</option>
-            <option value="national">En mi país</option>
-            <option value="international">Internacional</option>
-        </select>
-    </div>
-    <div>
-        <label for="comment">Alguna información extra que quieras agregar (industria, consulta específica, experiencia, etc.)</label>
-            <section>
-                <textarea name="comment" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
-            </section>
-    </div>
-    <div>
-        <input class="boton" type="submit" value="Enviar">
-        <input class="boton" type="reset" value="Limpiar todo">
-    </div>
-</form>
 
-<!-- Pie de página para dirigir a nuestras redes sociales -->
     <!-- Pie de página -->
     <footer>
         <div class="row">
-            <div class="col">
-                <p class="footerCopy">Copyright ByB Digital - 2021.</p>
-            </div>
+            
             <div class="col">
                 <p class="footerTit"><b>Oficina</b> <div class="subrayado"><span></span></div></p>
                 <p class="footerText"> Av. Corrientes 2235</p>
@@ -128,8 +138,8 @@
                     </li>
                 </ul>
             </div>
-  
-            <div class="col">
+
+            <div class="col col--margin">
                 <p class="footerTit"> <b>Redes Sociales</b><div class="subrayado"><span></span></div></p>
                 <div class="redesSociales">
                     <i class="fab fa-facebook"></i>
@@ -137,6 +147,10 @@
                     <i class="fab fa-whatsapp"></i>
                 </div>
             </div>
+        </div>
+
+        <div>
+            <p class="footerCopy">Copyright ByB Digital - 2021.</p>
         </div>
     </footer>
     

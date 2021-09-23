@@ -52,10 +52,10 @@
     </header>  
 
       <main>
-        <h4>¿En qué podemos ayudarte?</h4>
-        <h5>Dejanos tus datos y nos pondremos en contacto a la brevedad</h5>
+        <h1 class="contactoTit">¿En qué podemos ayudarte?</h1>
+        <h2 class="contactoSub">Dejanos tus datos y nos pondremos en contacto a la brevedad</h2>
 
-        <!-- Formulario de contacto con BOOTSTRAP -->
+        <!-- Formulario de contacto -->
         <form class="formContacto" action="" method="POST" enctype="application/x-www-form-urlencoded">
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre:</label>
@@ -91,7 +91,7 @@
                    <label for="comment">Dejanos tus comentarios y consultas</label>
                 </section>
                 <section>
-                <textarea name="comment" cols="30" rows="10" placeholder="Escribe aquí"></textarea> 
+                <textarea name="comment" cols="30" rows="5" placeholder="Escribe aquí"></textarea> 
                 </section>
             </div>
             <div class="mb-3"> 
@@ -113,11 +113,11 @@
               </div>
 
               <div class="col-12 separacionForm">
-                <button class="btn btn-primary" type="reset">Borrar datos</button>
+                <button class="boton btn btn-primary" type="reset">Borrar datos</button>
               </div>
 
               <!-- APLICANDO BOOTSTRAP MODAL -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <button type="button" class="boton btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Enviar
               </button>
 
@@ -144,9 +144,7 @@
     <!-- Pie de página -->
     <footer>
       <div class="row">
-          <div class="col">
-              <p class="footerCopy">Copyright ByB Digital - 2021.</p>
-          </div>
+          
           <div class="col">
               <p class="footerTit"><b>Oficina</b> <div class="subrayado"><span></span></div></p>
               <p class="footerText"> Av. Corrientes 2235</p>
@@ -165,7 +163,7 @@
                       <a href="../pages/cursos.html">Cursos</a>
                   </li>
                   <li>
-                      <a href="../pages/asesorias.html">Asesorías</a>
+                      <a href="../pages/asesorias.html">Asesorias</a>
                   </li>
                   <li>
                       <a href="../pages/noticias.html">Noticias</a>
@@ -173,7 +171,7 @@
               </ul>
           </div>
 
-          <div class="col">
+          <div class="col col--margin">
               <p class="footerTit"> <b>Redes Sociales</b><div class="subrayado"><span></span></div></p>
               <div class="redesSociales">
                   <i class="fab fa-facebook"></i>
@@ -182,6 +180,10 @@
               </div>
           </div>
       </div>
+
+      <div>
+          <p class="footerCopy">Copyright ByB Digital - 2021.</p>
+      </div>  
   </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

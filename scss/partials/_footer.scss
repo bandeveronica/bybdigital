@@ -11,12 +11,15 @@ footer {
     font-size: 13px;
     line-height: 18px;
     opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+        padding-left: 0;
+    }
 }
 
-.footerCopy {
-    position: absolute;
-    bottom: 8px;
-}
 
 .footerText {
     padding-left: 20px;
@@ -38,6 +41,9 @@ footer p {
 .col {
     flex-basis: 25%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footerTit{
@@ -89,6 +95,9 @@ a {
     left: 10px;
     animation: moving 2s linear infinite;
 }
+
+
+// Efecto de movimiento del footer
 @keyframes moving {
     0% {
         left: -20px;
@@ -98,15 +107,37 @@ a {
     }
 }
 
+
+// Responsive del footer
 @media (max-width: 700px) {
     footer {
         bottom: unset;
         border-top-left-radius: 50px;
+
+        ul {
+            padding-left: 0;
+            text-align: center;
+            margin-bottom: 0;
+
+            li:nth-child(4) {
+                padding-bottom: 0;
+            }
+        }
     }
+
     .col {
         flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--margin {
+            margin-bottom: 1rem;
+        }
     }
+    
     .footerCopy {
         padding-top: 10px;
+        bottom: 0px;
     }
 }
