@@ -275,7 +275,8 @@ div article {
   background-color: rgba(252, 241, 241, 0.925);
   padding: 1rem;
   border-radius: 30px;
-  border-style: groove;
+  -webkit-box-shadow: 2px 2px 30px rgba(240, 91, 202, 0.6);
+          box-shadow: 2px 2px 30px rgba(240, 91, 202, 0.6);
 }
 
 form label {
@@ -318,10 +319,11 @@ section .quote {
 .formContacto {
   width: 50%;
   margin: auto;
-  background-color: rgba(252, 241, 241, 0.925);
+  background-color: rgba(249, 225, 255, 0.925);
   padding: 1rem;
   border-radius: 30px;
-  border-style: groove;
+  -webkit-box-shadow: 2px 2px 30px rgba(208, 155, 243, 0.6);
+          box-shadow: 2px 2px 30px rgba(208, 155, 243, 0.6);
   margin-top: 3rem;
 }
 
