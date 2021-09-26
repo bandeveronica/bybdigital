@@ -284,6 +284,10 @@ form label {
   border-radius: 5px;
 }
 
+.formPart {
+  padding: 10px;
+}
+
 .card {
   width: 70%;
   -webkit-box-pack: center;
