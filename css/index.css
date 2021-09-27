@@ -341,6 +341,10 @@ form label {
   margin-bottom: 10px;
 }
 
+.pagError {
+  margin: 20px;
+}
+
 @media screen and (max-width: 780px) {
   h1, h2 {
     text-align: center;
